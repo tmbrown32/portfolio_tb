@@ -255,7 +255,7 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
         "That falls outside my immediate knowledge base. Try checking: 'Tell me about your FIRST Robotics experience' or 'What skills do you have?'.",
         "No direct answer found in my database. Feel free to shoot me an email directly at <a href='mailto:tmbrown@uwaterloo.ca' style='color:#38bdf8'>tmbrown@uwaterloo.ca</a>!"
     ];
-})();
+
     var fallbackIdx = 0;
     var chatOpen = false;
     var greeted = false;
@@ -279,7 +279,7 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
         if(tip) tip.style.display='none';
         if(chatOpen && !greeted){
             greeted = true;
-            setTimeout(function(){ addBot("Hey! I'm a quick chatbot version of Tamika. Ask me about my projects, skills, competitions, or whether I'm open to work \u2014 I'll do my best to answer!"); }, 350);
+            setTimeout(function(){ addBot("Hey! I'm a quick chatbot version of Tamika. Ask me about my projects, skills, competitions, or whether I'm open to work — I'll do my best to answer!"); }, 350);
         }
         if(chatOpen) setTimeout(function(){ if(inputEl) inputEl.focus(); }, 400);
     }
@@ -344,7 +344,8 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
         send(el.textContent.trim());
     }
 
+    // Attach to window so HTML onClick/onSubmit actions can reach them from global scope
     window.toggleChat       = toggleChat;
     window.handleChatSubmit = handleChatSubmit;
-    window.sendChip         = sendChip;
+    window.sendChip          = sendChip;
 })();
