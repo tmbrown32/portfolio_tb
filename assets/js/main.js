@@ -111,7 +111,7 @@ function toggleNav(){document.getElementById('navLinks').classList.toggle('open'
 function closeNav(){document.getElementById('navLinks').classList.remove('open');}
  
 /* TYPEWRITER */
-const phrases=['Mechatronics Engineering','AI & Robotics','Chairless Chair Builder','Energy Systems'];
+const phrases=['Mechatronics Engineering','Robotics','Leadership','First Year'];
 let pi=0,ci=0,del=false;
 const tw=document.getElementById('tw');
 function type(){
@@ -193,61 +193,69 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
 (function(){
     var KB = [
         {
-            keys: ['shell','eco','marathon','brazil','brasil','americas','result','win','won','place','efficiency','km/kwh','mi/kwh','373','196','racing','borregos'],
-            answer: "\uD83C\uDFC6 Competed with <strong>Borregos Racing</strong> at two Shell Eco-marathon editions in 2025:<br>\u2022 <strong>Americas</strong> \u2014 2nd place \u00B7 196.8 mi/kWh<br>\u2022 <strong>Brazil</strong> \u2014 2nd place \u00B7 373.2 km/kWh<br>Both in the Prototype Battery-Electric category. Focused on energy systems optimization and vehicle subsystem integration."
+            keys: ['wcr', 'west coast', 'robotics', 'co-op', 'lely', 'discovery', 'milking', 'manure', 'crash', 'bracket', 'power bi', 'optimization', 'analytics', 'coop', 'bc'],
+            answer: "🤖 Spent my first co-op at <strong>West Coast Robotics</strong> in Agassiz, BC:<br>• <strong>Root-Cause Optimization:</strong> Reduced autonomous robot crashes from 4+/day to target by designing custom brush brackets using SolidWorks CAD & machine shop tools.<br>• <strong>Data Infrastructure:</strong> Programmed Power BI dashboards identifying over $2.9M in overstock/deadstock capital and mapping optimal field routes.<br>• <strong>Field Deployments:</strong> Co-installed Lely A5 milking systems and set up complex 360 Rain irrigation machinery."
         },
         {
-            keys: ['exoskeleton','chairless','chair','passive','lower','limb','leg','biomech','knee','linkage','wearable'],
-            answer: "The <strong>Chairless Chair</strong> is a passive lower-limb exoskeleton I'm currently building. A locking knee linkage transfers body weight through an aluminum frame directly to the ground, cutting static muscle fatigue. Target: industrial assembly lines and rehab. Currently at ~40% build progress."
+            keys: ['arcade', 'cabinet', 'game', 'engine', 'unity', 'c#', 'wood', 'milled', 'milling', 'wiring', 'laser', 'lightburn', 'joystick', 'custom'],
+            answer: "🕹️ Built a fully operational <strong>Custom Arcade Cabinet & Game Engine</strong>:<br>• <strong>Fabrication:</strong> Milled 10+ custom wood components using miter, jigsaw, and routers, plus laser-cut components via Lightburn.<br>• <strong>Hardware:</strong> Soldered customized wiring harnesses to link joysticks, microswitches, an internal PC, and a monitor.<br>• <strong>Software:</strong> Programmed the game using C# and Unity with data-driven architecture, played by 300+ people at competitive showcases."
         },
         {
-            keys: ['skill','know','language','python','c++','matlab','javascript','pytorch','tensorflow','opencv','arduino','solidworks','git','linux'],
-            answer: "My main skills:<br><strong>Programming:</strong> Python, C++, JavaScript, MATLAB<br><strong>AI/ML:</strong> PyTorch, TensorFlow, OpenCV, scikit-learn<br><strong>Robotics/HW:</strong> Arduino, SolidWorks, 3D Printing<br><strong>Tools:</strong> Git, Linux, VS Code, Flask"
+            keys: ['vex', 'car', 'drivetrain', 'chassis', 'metal', 'motor', 'gears', 'intake', 'lift', 'mechanism'],
+            answer: "🤖 Developed a <strong>VEX Robot</strong>:<br>• <strong>Chassis Design:</strong> Built a high-mobility robot chassis with custom structural metal layouts and optimized high-torque gear profiles.<br>• <strong>Subsystems:</strong> Integrated dynamic physical intake and mechanical lifting subsystems, configuring motor boundaries to eliminate binding."
         },
         {
-            keys: ['ai','machine learning','deep learning','neural','ml','intelligence','nvidia','certificate','cert','santander','course'],
-            answer: "I hold two AI certifications:<br>\u2022 <strong>NVIDIA DLI</strong> \u2014 Fundamentals of Deep Learning<br>\u2022 <strong>Santander Open Academy</strong> \u2014 Introduction to AI Engineering<br>Also learning AI through real projects (PyTorch, TensorFlow, OpenCV) and research at SHIELD."
+            keys: ['baja', 'sae', 'suspension', 'fea', 'simulation', 'solidworks', 'control arm', 'wbs', 'gantt', 'sponsorship'],
+            answer: "🏎️ Active on the <strong>University of Waterloo Baja SAE Team</strong> (Operations & Dynamics):<br>• <strong>Simulation:</strong> Executing SolidWorks Finite Element Analysis (FEA) on front control arm configurations to check safety factors.<br>• <strong>Project Management:</strong> Co-developing Work Breakdown Structures (WBS) and engineering Gantt charts, alongside boosting operational budgets via corporate sponsorship outreach."
         },
         {
-            keys: ['experience','work','shield','research','becario','scholar'],
-            answer: "Current experience:<br>\u2022 <strong>Borregos Racing</strong> (2024\u2013present) \u2014 energy systems & vehicle integration, two 2nd-place finishes at Shell Eco-marathon<br>\u2022 <strong>SHIELD Research Scholar</strong> (2025\u2013present) \u2014 robotics, automation, and AI at ITESM"
+            keys: ['first', '9465', 'axolotls', 'captain', 'driver', 'roborio', 'andymark', 'climbing', 'arm', 'stem', 'presentation', 'outreach'],
+            answer: "🤖 Team Captain & Primary Driver for <strong>FIRST Robotics Club 9465 (Imagine Axolotls)</strong>:<br>• <strong>Technical Build:</strong> Wired RoboRIO platforms, managed AndyMark mechanical architectures, and built a custom high-success climbing arm.<br>• <strong>Competitive Record:</strong> Handled rapid pit repairs and drove through 11 high-stakes matches to finish 21st out of 48 teams at Pacific Regionals.<br>• <strong>Outreach:</strong> Delivered live-telemetry presentations to 200+ prospective students at SFU and UW to scale STEM interest."
         },
         {
-            keys: ['education','study','school','itesm','tec','monterrey','semester','degree','mechatronics','university'],
-            answer: "Studying <strong>Mechatronics Engineering</strong> at <strong>Tecnológico de Monterrey (ITESM)</strong>, currently in my 4th semester. Focus: AI, robotics, and automation."
+            keys: ['skill', 'know', 'language', 'python', 'c#', 'c++', 'unity', 'solidworks', 'cad', 'fea', 'power bi', 'excel', 'machining', 'laser', 'soldering', 'wiring'],
+            answer: "My core engineering competencies:<br><strong>Software & Analytics:</strong> C#, C++, Python, Unity Engine, Power BI, Advanced Excel Analytics.<br><strong>CAD & Simulation:</strong> SolidWorks CAD, SolidWorks FEA Structural Simulation, AutoCAD.<br><strong>Fabrication & Shop:</strong> UW Machine Shop Certified, Custom Wiring Design, Lightburn Laser Cutting, Industrial Milling/Lathes, Saws, Tooling, Soldering."
         },
         {
-            keys: ['internship','hire','job','part-time','part time','opportunity','open','available','recruit','looking'],
-            answer: "Yes! Actively looking for <strong>part-time roles or internships</strong> in AI, robotics, or automation \u2014 something that can run alongside my classes. Reach me at <a href='mailto:vmcarlos024@gmail.com' style='color:#c4b5fd'>vmcarlos024@gmail.com</a>"
+            keys: ['leadership', 'service club', 'president', 'government', 'grad committee', 'fundraiser', 'cyrus', 'wilma', 'volunteer', 'hours'],
+            answer: "🌟 Community Impact & Student Leadership profile:<br>• <strong>Service Club (Founder & President):</strong> Spearheaded local drives raising $2,100+ for the Cyrus Centre youth shelter and Wilma's Transition House, and logged 250+ community service hours.<br>• <strong>Student Government (President / Co-President):</strong> Managed senior class operational budgets and structural event logistics for 100+ grads, organized orientation programs, and ran general election poll setups."
         },
         {
-            keys: ['contact','email','linkedin','github','reach','find','social','connect'],
-            answer: "Best ways to reach me:<br>\u2022 Email: <a href='mailto:vmcarlos024@gmail.com' style='color:#c4b5fd'>vmcarlos024@gmail.com</a><br>\u2022 LinkedIn: <a href='https://www.linkedin.com/in/carlos-velasco-moreno' target='_blank' style='color:#c4b5fd'>carlos-velasco-moreno</a><br>\u2022 GitHub: <a href='https://github.com/CharlsMex24' target='_blank' style='color:#c4b5fd'>CharlsMex24</a>"
+            keys: ['engsoc', 'class rep', 'representative', 'society', 'waterloo engineering'],
+            answer: "⚙️ Elected <strong>Class Representative for the UW Engineering Society (EngSoc)</strong>. Review and vote on institutional motions, funding layouts, and constitutional policies while engineering structured feedback surveys for the Mechatronics cohort."
         },
         {
-            keys: ['project','portfolio','build','built','current','doing'],
-            answer: "Current / recent projects:<br>\u2022 <strong>Chairless Chair</strong> \u2014 passive lower-limb exoskeleton (in progress)<br>\u2022 <strong>Borregos Racing EV</strong> \u2014 energy-efficient prototype vehicle<br>\u2022 <strong>SHIELD Research</strong> \u2014 robotics & AI at ITESM<br>Check the Portfolio section above for full details!"
+            keys: ['education', 'study', 'school', 'waterloo', 'uw', 'imagine', 'degree', 'mechatronics', 'university', 'valedictorian', 'basc'],
+            answer: "🎓 <strong>Academic Framework:</strong><br>• <strong>University of Waterloo:</strong> Bachelor of Applied Science (BASc) in Mechatronics Engineering (Honours Co-op Track, Class of 2030).<br>• <strong>Imagine High Secondary:</strong> Graduated as High School Class Valedictorian, specializing in Integrated Arts & Technology."
         },
         {
-            keys: ['who','about','yourself','you','carlos','name','intro','tell me','hello','hi','hey'],
-            answer: "Hey! I'm <strong>Carlos Velasco</strong>, a Mechatronics Engineering student at ITESM Monterrey (4th semester). Focused on AI, robotics, and automation. I've competed at Shell Eco-marathon (2nd place twice), building a passive exoskeleton, and doing research at SHIELD. Ask me anything!"
+            keys: ['internship', 'hire', 'job', 'coop', 'co-op', 'opportunity', 'open', 'available', 'recruit', 'looking', 'winter', '2027'],
+            answer: "💼 Yes! I am actively seeking <strong>Mechatronics Engineering Co-op positions for the Winter 2027 term</strong>. I am eager to apply my diverse technical fabrication, hardware automation, and analytical dataset skills to a forward-thinking team. Reach me at <a href='mailto:tmbrown@uwaterloo.ca' style='color:#38bdf8'>tmbrown@uwaterloo.ca</a>!"
         },
         {
-            keys: ['cv','resume','pdf','download'],
-            answer: "You can view and download my CV here: <a href='assets/documents/cv.pdf' target='_blank' style='color:#c4b5fd'>Open CV PDF \u2192</a>"
+            keys: ['contact', 'email', 'linkedin', 'github', 'reach', 'find', 'social', 'connect'],
+            answer: "Let's connect! Best routes to reach me:<br>• Email: <a href='mailto:tmbrown@uwaterloo.ca' style='color:#38bdf8'>tmbrown@uwaterloo.ca</a><br>• LinkedIn: <a href='https://linkedin.com/in/tamika-brown-' target='_blank' style='color:#38bdf8'>tamika-brown-</a><br>• GitHub: <a href='https://github.com/tmbrown32' target='_blank' style='color:#38bdf8'>tmbrown32</a>"
         },
         {
-            keys: ['goal','plan','future','aspire','dream','company','startup','create'],
-            answer: "Short-term: land a part-time job or internship in AI/robotics while finishing my degree. Long-term: build a company at the intersection of AI and industrial automation \u2014 intelligent systems that work in physical environments."
+            keys: ['who', 'about', 'yourself', 'you', 'tamika', 'name', 'intro', 'tell me', 'hello', 'hi', 'hey'],
+            answer: "Hey there! I'm <strong>Tamika Brown</strong>, a Mechatronics Engineering student at the University of Waterloo. I have hands-on experience optimizing field robotics at West Coast Robotics, building custom arcade hardware, engineering FEA models for UW Baja SAE, and leading service organizations. Ask me about my engineering work or upcoming Winter 2027 co-op targets!"
+        },
+        {
+            keys: ['cv', 'resume', 'pdf', 'download'],
+            answer: "You can open and read my complete technical resume here: <a href='assets/documents/cv.pdf' target='_blank' style='color:#38bdf8'>Open Resume PDF →</a>"
+        },
+        {
+            keys: ['karate', 'black belt', 'martial arts', 'dan', 'tournament', 'sparring', 'kata', 'weapons', 'judge'],
+            answer: "🥋 Earned my <strong>1st Dan Black Belt</strong> at Chilliwack Central Karate Club in May 2024 after over a decade of discipline. Competed across 13 distinct provincial championships (winning multiple Gold, Silver, and Bronze medals in sparring/weapons) and served as a certified regional Ring Judge."
         }
     ];
 
     var FALLBACKS = [
-        "Not sure about that \u2014 try asking about my <strong>projects</strong>, <strong>skills</strong>, <strong>Shell Eco-marathon</strong> results, or if I'm open to <strong>internships</strong>!",
-        "Outside my knowledge base. Try: 'What are your skills?' or 'Tell me about the Chairless Chair'.",
-        "No answer for that one. Reach me at <a href='mailto:vmcarlos024@gmail.com' style='color:#c4b5fd'>vmcarlos024@gmail.com</a>!"
+        "Not sure about that — try asking about my <strong>West Coast Robotics co-op</strong>, <strong>arcade machine project</strong>, <strong>engineering skills</strong>, or my availability for <strong>Winter 2027 co-op opportunities</strong>!",
+        "That falls outside my immediate knowledge base. Try checking: 'Tell me about your FIRST Robotics experience' or 'What skills do you have?'.",
+        "No direct answer found in my database. Feel free to shoot me an email directly at <a href='mailto:tmbrown@uwaterloo.ca' style='color:#38bdf8'>tmbrown@uwaterloo.ca</a>!"
     ];
-
+})();
     var fallbackIdx = 0;
     var chatOpen = false;
     var greeted = false;
@@ -271,7 +279,7 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
         if(tip) tip.style.display='none';
         if(chatOpen && !greeted){
             greeted = true;
-            setTimeout(function(){ addBot("Hey! I'm a quick chatbot version of Carlos. Ask me about my projects, skills, competitions, or whether I'm open to work \u2014 I'll do my best to answer!"); }, 350);
+            setTimeout(function(){ addBot("Hey! I'm a quick chatbot version of Tamika. Ask me about my projects, skills, competitions, or whether I'm open to work \u2014 I'll do my best to answer!"); }, 350);
         }
         if(chatOpen) setTimeout(function(){ if(inputEl) inputEl.focus(); }, 400);
     }
